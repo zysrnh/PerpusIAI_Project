@@ -176,7 +176,7 @@ $content .= '<tr>
 	<td>'.$no.'.</td>
 <td><img src="images/produk/'.$data['foto'].'"  width="100px"></td>
 
-		<td><b>'.$data['nama'].'</b><br/>Rp. '.matauang($data['harga']).'</td>
+		<td><b>'.$data['nama'].'</b><br/>'.$data['harga'].'</td>
 	<td>'.limitTXT(strip_tags($data['konten']),140).'
 	<br/><a href="produk/'.$data['id'].'/'.$urlkat.'.html" title="'.$data['nama'].'">Selengkapnya</a> </td>
 
@@ -333,7 +333,7 @@ $content .= '<tr>
 	<td>'.$no.'.</td>
 <td><img src="images/produk/'.$data['foto'].'"  width="100px"></td>
 
-		<td><b>'.$data['nama'].'</b><br/>Rp. '.matauang($data['harga']).'</td>
+		<td><b>'.$data['nama'].'</b><br/>'.$data['harga'].'</td>
 	<td>'.limitTXT(strip_tags($data['konten']),140).'
 	<br/><a href="produk/'.$data['id'].'/'.$urlkat.'.html" title="'.$data['nama'].'">Selengkapnya</a> </td>
 
@@ -418,7 +418,7 @@ $hits = $hits +1;
 $updatehits = $koneksi_db->sql_query("UPDATE mod_data_produk SET hits='$hits' WHERE id='$id'");
 
 $content .= '<h4>'.$nama.'</h4>
-Harga <b>Rp. '.matauang($harga).'</b>
+Pengarang <b>'.$harga.'</b>
 <br/><br/>
 <img src="images/produk/'.$foto.'" alt="'.$nama.'"   class="img-responsive"><br/>
 '.$konten.'
@@ -510,9 +510,9 @@ $content .= '
 <td><input type="text" value="'.$nama.'" disabled size="33"></td>
 </tr>
 <tr>
-<td>Harga</td>
+<td>Pengarang</td>
 <td>:</td>
-<td><input type="text" value="Rp. '.matauang($harga).'" disabled size="33"></td>
+<td><input type="text" value="'.$harga.'" disabled size="33"></td>
 </tr>
 
 <tr>

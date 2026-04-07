@@ -210,7 +210,7 @@ $content .= '
 <td><textarea id="elm1" name="konten" rows="15" cols="80" style="width: 100%;">'.htmlspecialchars(@$_POST['konten']).'</textarea></td>
 </tr>
 <tr>
-<td>Penerbit</td>
+<td>Pengarang</td>
 <td>:</td>
 <td>'.input_text ('harga',@$_POST['harga']).'</td>
 </tr>
@@ -372,7 +372,7 @@ $content .= '
 <td><textarea id="elm1" name="konten" rows="15" cols="80" style="width: 100%;">'.htmlspecialchars(@$_POST['konten']).'</textarea></td>
 </tr>
 <tr>
-<td>Harga (Rp)</td>
+<td>Pengarang</td>
 <td>:</td>
 <td>'.input_text ('harga',@$_POST['harga']).'</td>
 </tr>
@@ -516,7 +516,7 @@ $content .= '<tr>
 	<td>'.$no.'.</td>
 <td><img src="images/produk/'.$data['foto'].'"  width="100px"></td>
 
-		<td><b>'.$data['nama'].'</b><br/>Rp. '.matauang($data['harga']).'</td>
+		<td><b>'.$data['nama'].'</b><br/>'.$data['harga'].'</td>
 	<td>'.limitTXT(strip_tags($data['konten']),140).'</td>
 
 
@@ -681,7 +681,7 @@ $content .= '<tr>
 	<td>'.$no.'.</td>
 <td><img src="images/produk/'.$data['foto'].'"  width="100px"></td>
 
-		<td><b>'.$data['nama'].'</b><br/>Rp. '.matauang($data['harga']).'</td>
+		<td><b>'.$data['nama'].'</b><br/>'.$data['harga'].'</td>
 	<td>'.limitTXT(strip_tags($data['konten']),140).'</td>
 
 

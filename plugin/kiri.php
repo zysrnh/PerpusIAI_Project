@@ -26,7 +26,7 @@ echo '
             <h4>
                 <a href="produk/'.$data['id'].'/'.$url.'.html" title="'.$data['nama'].'">
                     '.$data['nama'].'<br/>
-                    <span class="v_pl_name">Penerbit: '.$data['harga'].'</span>
+                    <span class="v_pl_name">Pengarang: '.$data['harga'].'</span>
                 </a>
             </h4>
         </div>
@@ -91,7 +91,7 @@ echo '
             </div>
             <div class="to-ho-hotel-con-3">
                 <ul>
-                    <li>Penerbit: '.$data['harga'].'
+                    <li>Pengarang: '.$data['harga'].'
                         <div class="dir-rat-star ho-hot-rat-star">
                             Rating:
                             <i class="fa fa-star" aria-hidden="true"></i>
