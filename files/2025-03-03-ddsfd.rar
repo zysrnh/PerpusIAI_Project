@@ -1,0 +1,17 @@
+<?php
+
+    //make connection to database
+    $connect = mysqli_connect('localhost', 'root', '', 'latihan');
+
+    //get data from form input
+    $name       = $_POST['name'];
+    $latitude   = $_POST['latitude'];
+    $longitude  = $_POST['longitude'];
+    $time       = date("Y-m-d H:i:s");
+
+    //insert data into database
+    $insert = mysqli_query($connect, "insert into online_attendance set name='$name', latitude='$latitude', longitude='$longitude', time='$time'");
+
+    //back to index.php
+    header("Location: index.php");
+?>
